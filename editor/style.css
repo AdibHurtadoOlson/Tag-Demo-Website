@@ -1,0 +1,90 @@
+﻿.scrollmargin {
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 64px;
+    color: black;
+    padding-top: 0px;
+    margin: 1% 1% 1% 1%;
+}
+h2 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 32px;
+    color: black;
+}
+html {
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+}
+#description {
+    color: black;
+    font-family: Verdana;
+    font-size: 18px;
+    margin: 0% 10% 0% 10%;
+    border: solid 4px gray;
+    padding: 1% 1% 1% 1%;
+}
+
+/* Button animation */
+button,
+button::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+button {
+    background: none;
+    border: 4px solid #141414;
+    border-radius: 7px;
+    color: #141414;
+    font-size: 1.6em;
+    font-weight: bold;
+    height: 2.5em;
+    width: 5em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+    button::before,
+    button::after {
+        background: #141414;
+        content: '';
+        position: absolute;
+        z-index: -1;
+    }
+
+    button:hover {
+        color: #fff;
+    }
+
+    button::after {
+        height: 0;
+        left: 50%;
+        top: 50%;
+        width: 0;
+    }
+
+button:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* align list items horizontally and add gap between them*/
+ul, li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 2em;
+}

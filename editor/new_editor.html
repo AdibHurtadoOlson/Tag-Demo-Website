@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Editor</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>
+        Tag Demo
+    </h1>
+    <!--Button list-->
+    <div>
+        <ul>
+            <li>
+                <button type="button" id="editor__run">Next</button>
+            </li>
+            <li>
+                <button type="button" id="editor__reset">Reset</button>
+            </li>
+        </ul>
+    </div>
+    <ace-playground></ace-playground>
+
+    <!-- load ace and editor -->
+    <script src="../src/ace.js"></script>
+    <script src="editor.js"></script>
+
+
+    <div>
+        <h2 id="bottom-title">
+            What is going on here?
+        </h2>
+        <p id="description">
+            The following examples showcase different tags that are can be used when creating an HTML webpage. This example uses the generic layout that almost every website has. There is an html opening tag followed by a head tag, then the body tag, and finally the html closing tag. Note that nothing is currently being output to our mini webpage on the right. This is because we haven&#39;t added anything into either the head or body tag.
+        </p>
+    </div>
+</body>
+</html>
